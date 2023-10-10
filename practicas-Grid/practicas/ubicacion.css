@@ -1,0 +1,57 @@
+.container {
+    border:5px solid #38f109;
+    display: grid;
+    grid-template-columns: 150px 150px 150px ;
+    grid-template-rows: 150px 150px 150px;
+    place-content: center;
+    grid-template-areas: "logo nav nav" "main main side" "foter1 foter2 foter3";
+}
+.item-1 {
+    border:5px solid #151615;
+    background-image: url(./media/giphy.gif);
+    background-position: center;
+    background-size: cover;
+    grid-area: logo;
+}
+.item-2 {
+    border:5px solid #151615;
+    background-image: url(./media/giphy\ \(1\).gif);
+    background-position: center;
+    background-size: cover;
+    grid-area: nav;
+}
+.item-3 {
+    border:5px solid #151615;
+    background-image: url(./media/giphy\ \(2\).gif);
+    background-position: center;
+    background-size: cover;
+    grid-area: main;
+}
+.item-4 {
+    border:5px solid #151615;
+    background-image: url(./media/giphy\ \(3\).gif);
+    background-position: center;
+    background-size: cover;
+    grid-area: side;
+}
+.item-5 {
+    border:5px solid #151615;
+    background-image: url(./media/giphy\ \(4\).gif);
+    background-position: center;
+    background-size: cover;
+    grid-area: foter1;
+}
+.item-6 {
+    border:5px solid #151615;
+    background-image: url(./media/giphy\ \(5\).gif);
+    background-position: center;
+    background-size: cover;
+    grid-area: foter2;
+}
+.item-7 {
+    border:5px solid #151615;
+    background-image: url(./media/giphy\ \(6\).gif);
+    background-position: center;
+    background-size: cover;
+    grid-area: foter3;
+}

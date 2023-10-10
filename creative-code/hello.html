@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas width="600" height="600"></canvas>
+    <script>
+
+        // Dibujando con canvas
+
+        let canvas = document.querySelector('canvas');
+        let context = canvas.getContext('2d');
+
+        context.fillStyle = 'blue'
+        /* context.fillRect(100,100,400,400) */
+
+        // Trazamos una linea por el borde del canvas
+        context.lineWidth = 4;
+        context.beginPath();
+        context.rect(100,100,400,400)
+        //context.stroke();
+
+        // Dibujar un circulo con .arc :
+        context.beginPath();
+        context.arc(300,300,100,0,Math.PI * 2)
+        //context.stroke();
+
+
+        // Dibujando cudrados con loops dentro de un loop
+
+        const width = 60;
+        const height = 60;
+        const gap = 20;
+        let x,y;
+
+        for (let i = 0; i < 5; i++) {
+            for (let j = 0; j < 5; j++) {
+            
+                x = 100 + (width + gap) * i;
+                y = 100 + (height+ gap) * j;
+
+                context.beginPath();
+                context.rect(x,y,width,height);
+                context.stroke();
+
+                // Conditional en javascript y Math.random :
+                if (Math.random() > 0.5) {
+                    context.beginPath();
+                context.rect(x + 8,y + 8,width - 16,height - 16);
+                context.stroke();
+                }
+                
+            }
+            
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // Variables: 
+
+        let year = 2042;
+        let nextYear = year + 1;
+
+        let dinner = 'salad';
+        let sentence = 'Tonight, dineer will be ' + dinner
+        
+        // function:
+
+        function saySomething(param) {
+            console.log(param)
+        }
+        saySomething(sentence)
+
+        function add(a,b) {
+            return a + b;
+        }
+
+        let result = add(5,7)
+        saySomething(result)
+
+        // funtion Arrows:
+
+        let multiply = (a,b) => {
+            return a * b;
+        }
+        saySomething(multiply(5,7))
+
+        // Arrays:
+
+        let years = [];
+        let menu = ['starter', 'main', 'dessert', 'drinks'];
+
+        // Loops o bucles: los bucle son fragmentos de codigo
+        // ejecutados una y otra vez limitadamente 
+
+        for (let i = 0; i < menu.length; i++) {
+            console.log(menu[i]);
+        }
+
+        for (let i = 0; i < 10; i++) {
+            years.push(2040 + i);
+        }
+
+        console.log(years)
+
+
+    </script>
+</body>
+</html>

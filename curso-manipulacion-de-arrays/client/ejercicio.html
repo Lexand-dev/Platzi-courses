@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="app"></div>
+</body>
+  <script>
+    const tareas = [
+      { title: "hacer la cama", estado: "terminado"},
+      { title: "hacer el desayuno", estado: "terminado"},
+      { title: "hacer limpieza", estado: "terminado"},
+      { title: "hacer las clases de platzi", estado: "terminado"}      
+    ]
+
+    const app = document.getElementById('app')
+    tareas.forEach(tarea => {
+      app.innerHTML += `<input type="checkbox"> ${tarea.title} - ${tarea.estado}</input>`
+    }) 
+  </script>
+</html>

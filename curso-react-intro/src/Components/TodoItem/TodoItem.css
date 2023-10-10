@@ -1,0 +1,30 @@
+li {
+  list-style: none;
+  margin: 25px 0;
+  padding: 10px 20px;
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  background-color: transparent;
+  border: 1px solid #ffffff62; 
+}
+li:hover {
+  background-color: #ffffff46;
+  border: 1px solid #ffffff62;
+}
+.todo-item {
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+
+}
+.todo-item--check {
+  text-decoration: line-through;
+  color: #ffffff62;
+}
+
+
+

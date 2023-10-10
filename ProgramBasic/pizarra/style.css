@@ -1,0 +1,51 @@
+body{
+	background-color: #AFB4CB;
+	font-family: Comic Sans MS;
+}
+
+.selector_negro,.selector_blanco,.selector_rojo,.selector_azul,.selector_verde,.selector_amarillo,
+.selector_cian,.selector_magenta,.selector_cafe,.selector_gris,.selector_naranja,.selector_teal,.selector_rosa{
+	width: 25px;
+}
+
+.selector_negro {background-color: black;}.selector_blanco {background-color: white;}
+.selector_rojo {background-color: red;}.selector_azul {background-color: blue;}
+.selector_verde {background-color: green;}.selector_amarillo {background-color: yellow;}
+.selector_cian {background-color: cyan;}.selector_magenta {background-color: magenta;}
+.selector_cafe {background-color: brown;}.selector_gris {background-color: gray;}
+.selector_naranja {background-color: orange;}.selector_teal {background-color: teal;}
+.selector_rosa {background-color: pink;}
+
+.trazo_grosor {
+	width: 100px;
+}
+
+.borrador_grosor {
+	width: 100;
+}
+
+.goma_borrar {
+	width: 30px;
+	height: 30px;
+	border-radius: 10px;
+}
+
+.borrar_canvas {
+	width: 100px;
+}
+
+.dato_hexadecimal_trazo {
+	width: 510px;
+}
+
+.dato_hexadecimal_fondo {
+	width: 510px;
+}
+
+.boton_trazo_hexa {
+	width: 200px;
+}
+
+.boton_fondo_hexa {
+	width: 200px;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>Pizarra</title>
+	<link rel="stylesheet" type="text/css" href="./style.css"/>
+</head>
+<body>
+	<h1>Dibuja con el mouse</h1>
+	<p>
+		Color del trazo:
+		<input type="button" id="boton_negro" class="selector_negro"/>
+		<input type="button" id="boton_blanco" class="selector_blanco"/>
+		<input type="button" id="boton_rojo" class="selector_rojo"/>
+		<input type="button" id="boton_azul" class="selector_azul"/>
+		<input type="button" id="boton_verde" class="selector_verde"/>
+		<input type="button" id="boton_amarillo" class="selector_amarillo"/>
+		<input type="button" id="boton_cian" class="selector_cian"/>
+		<input type="button" id="boton_magenta" class="selector_magenta"/>
+		<input type="button" id="boton_cafe" class="selector_cafe"/>
+		<input type="button" id="boton_gris" class="selector_gris"/>
+		<input type="button" id="boton_naranja" class="selector_naranja">
+		<input type="button" id="boton_teal" class="selector_teal">
+		<input type="button" id="boton_rosa" class="selector_rosa"/>
+		<input type="text" id="trazo_hexadecimal" class="dato_hexadecimal_trazo" placeholder="escribe el numero que quieras en hexadecimal para el color del trazo">
+		<input type="button" id="boton_trazo_hexadecimal" class="boton_trazo_hexa" value="elegir color del trazo">
+		<br/>Color del fondo:
+		<input type="button" id="fondo_negro" class="selector_negro"/>
+		<input type="button" id="fondo_blanco" class="selector_blanco"/>
+		<input type="button" id="fondo_rojo" class="selector_rojo"/>
+		<input type="button" id="fondo_azul" class="selector_azul"/>
+		<input type="button" id="fondo_verde" class="selector_verde"/>
+		<input type="button" id="fondo_amarillo" class="selector_amarillo"/>
+		<input type="button" id="fondo_cian" class="selector_cian"/>
+		<input type="button" id="fondo_magenta" class="selector_magenta"/>
+		<input type="button" id="fondo_cafe" class="selector_cafe"/>
+		<input type="button" id="fondo_gris" class="selector_gris"/>
+		<input type="button" id="fondo_naranja" class="selector_naranja"/>
+		<input type="button" id="fondo_teal" class="selector_teal"/>
+		<input type="button" id="fondo_rosa" class="selector_rosa"/>
+		<input type="text" id="fondo_hexadecimal" class="dato_hexadecimal_fondo" placeholder="escribe el numero que quieras en hexadecimal para el color de fondo">
+		<input type="button" id="boton_fondo_hexadecimal" class="boton_fondo_hexa" value="elegir color del fondo">
+		<br /> Grosor del trazo:
+		<input type="text" id="grosor_trazo" class="trazo_grosor"/>
+		<input type="button" id="borrador" class="goma_borrar"/>
+		Grosor del borrador:
+		<input type="text" id="grosor_borrador" class="borrador_grosor"/>
+		<input type="button" id="limpiar_canvas" class="borrar_canvas" value="Borrar todo" />
+
+	</p>
+	<canvas style="background-color: whitesmoke;border: 2px solid black"; width="700" height="300" id="pizarra"></canvas>
+<script src="./pizarra.js"> </script>
+</body>
+</html>

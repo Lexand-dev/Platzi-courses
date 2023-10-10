@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Gatitos</title>
+</head>
+<body>
+
+<header>
+  <h1>Michis App</h1>
+</header>
+
+<h2>Michis aleatorios</h2>
+
+  <section class="container" id="randomMichis">
+
+    <article>
+      <img id="img1" class="image" alt="">
+      <button id="btn1">Guardar Michi</button>
+    </article>
+
+    <article>
+      <img id="img2" class="image" alt="">
+      <button id="btn2">Guardar Michi</button>
+    </article>
+
+    <article>
+      <img id="img3" class="image" alt="">
+      <button id="btn3">Guardar Michi</button>
+    </article>
+  </section>
+
+  <button onclick="loadRandomMichis()"  class="random-cat-button">Recargar</button>
+  
+  <form id="uploadingForm">
+    <input accept="image/png, image/jpeg" id="file" onchange="miniatura()" type="file" class="file" name="file"/>
+    <button type="button" onclick="uploadMichiPhoto()">Subir foto de michi</button>
+  </form>
+
+  <h2>Michis Favoritos</h2>
+
+  <section id="favourites">
+
+  <!--   <article>
+      <img id="img1" alt="">
+      <button>sacar Michi</button>
+    </article> -->
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="./main.js"></script>
+</body>
+</html>

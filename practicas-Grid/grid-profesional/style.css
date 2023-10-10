@@ -1,0 +1,16 @@
+:root {
+  --red-button: #dd1e29
+  --white-back: #f4f7ff
+  --grey-button: #96a4ad
+  --text-grey: #72747b
+  --grey-icon: #b9bdca
+  --black-icon: #1e2223
+  --select-icon-black: #696b70
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

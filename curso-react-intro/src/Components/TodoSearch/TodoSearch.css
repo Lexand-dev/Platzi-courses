@@ -1,0 +1,21 @@
+.imputSearch {
+  margin: 50px 10px;
+  padding: 15px 10px;
+  backdrop-filter: blur(10px);
+  border: 1px solid #ffffff62; 
+  border-radius: 2em;
+  background-color: black;
+}
+input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  width: 100%;
+  margin: 0 15px;
+  font-size: 1.2em;
+  background-color: black;
+}
+input:disabled {
+  opacity: 0.3;
+}

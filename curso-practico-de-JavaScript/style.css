@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 63.5%;
+}
+.header-title h1 {
+    font-size: 5rem;
+    font-weight: bold;
+}
+.header-title p {
+    font-size: 3rem;
+}
+.header-title {
+    text-align: center;
+}
+.main-container {
+    display: grid;
+    grid-template-columns: 400px 400px;
+    grid-template-rows: 300px 300px;
+    justify-content: center;
+    gap: 50px;
+   /*  text-align: center; */
+}
+
+

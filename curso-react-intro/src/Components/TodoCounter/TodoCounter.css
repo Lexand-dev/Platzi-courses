@@ -1,0 +1,9 @@
+h2 {
+  padding: 25px;
+  margin: 20px;
+  color: white;
+  background-color: black;
+}
+.TodoCounter--loading {
+  opacity: 25%;
+}
