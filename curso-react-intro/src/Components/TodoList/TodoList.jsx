@@ -20,7 +20,7 @@ export default function TodoList({
         {!loading && !totalTodos && onEmpty()}
         {!searchedTodos.length && !!totalTodos && onEmptySearch(searchText)}
 
-        {searchedTodos.map(render)}
+        {!loading && searchedTodos.map(render)}
       </ul>
     </div>
   );
