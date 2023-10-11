@@ -1,4 +1,4 @@
-import { ChangeAlertWithStorageListener } from "../Components/ChangeAlert";
+import { ChangeAlert } from "../Components/ChangeAlert";
 import CreateTodoButton from "../Components/CreateTodoButton/CreateTodoButton";
 import Modal from "../Components/Modal/Modal";
 import Empty from "../Components/Status-msg/Empty";
@@ -63,7 +63,7 @@ function App() {
           <TodoForm setOpenModal={setOpenModal} addTodo={addTodo} />
         </Modal>
       )}
-      <ChangeAlertWithStorageListener synchronized={synchronizedTodo} />
+      <ChangeAlert synchronized={synchronizedTodo} />
     </>
   );
 }
