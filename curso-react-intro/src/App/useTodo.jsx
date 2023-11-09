@@ -2,13 +2,20 @@ import { useState } from "react";
 import { useLocalStorage } from "../Hooks/useLocalStorage";
 
 function useTodo() {
+  const defaultTodos = [
+    { text: "Estudiar programación", completed: true },
+    { text: "Tomar las clases de React", completed: false },
+    { text: "Hacer ejercicios", completed: false },
+    { text: "Tomar un descanso", completed: false },
+  ];
+
   const {
     item: todos,
     saveItem: saveTodos,
     synchronized: synchronizedTodo,
     loading,
     error,
-  } = useLocalStorage("TODOS_V1", []);
+  } = useLocalStorage("TODOS_V1", defaultTodos);
 
   const [searchValue, setSearchValue] = useState("");
   const [openModal, setOpenModal] = useState(false);
@@ -62,13 +69,3 @@ function useTodo() {
 }
 
 export { useTodo };
-
-/* 
-  localStorage.removeItem("TODOS_V1");
-  const defaultTodos = [
-  { text: "Cortar cebolla", completed: true },
-  { text: "Tomar el curso de intro a React", completed: false },
-  { text: "Llorar con la llorona", completed: true },
-  { text: "LA ", completed: false },
-];
-  localStorage.setItem("TODOS_V1", JSON.stringify(defaultTodos)); */

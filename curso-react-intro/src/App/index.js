@@ -1,4 +1,4 @@
-import { ChangeAlert } from "../Components/ChangeAlert";
+import { ChangeAlert } from "../Components/ChangeAlert/ChangeAlert";
 import CreateTodoButton from "../Components/CreateTodoButton/CreateTodoButton";
 import Modal from "../Components/Modal/Modal";
 import Empty from "../Components/Status-msg/Empty";

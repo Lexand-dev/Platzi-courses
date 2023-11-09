@@ -1,12 +1,13 @@
 import "./App.css";
-import { ClassState } from "./ClassState";
-import { UseState } from "./UseState";
+import { UseReducer } from "./components/UseReducer";
+import { UseState } from "./components/UseState";
 
 function App() {
   return (
     <>
-      <UseState />
-      <ClassState />
+      <UseState name="Eliminar useState" />
+      <UseReducer name="Eliminar useReducer" />
+      {/* <ClassState name="Eliminar ClaState" /> */}
     </>
   );
 }
